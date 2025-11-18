@@ -1,3 +1,4 @@
+
 # Pandas Program: Create and Display a DataFrame with Custom Index Labels
 
 ## 🎯 Aim
@@ -17,8 +18,26 @@ To create and display a **DataFrame** using the **Pandas** library in Python fro
 ---
 
 ## 💻 Program
-Add code here
+```
 
+import pandas as pd
+
+
+data = eval(input())
+Col=eval(input())
+
+
+qrtsales = pd.DataFrame(data,columns=Col)
+
+
+print (qrtsales)
+
+qs=qrtsales.groupby('itemcat')
+print('Result after Filtering Dataframe') 
+print(qs['expenditure'].sum())
+```
 ## Output
+<img width="1136" height="206" alt="503222922-8d292885-1c9f-4682-9008-7f484b29a274" src="https://github.com/user-attachments/assets/c0537303-6856-4db1-b6f2-2470545e4575" />
 
 ## Result
+Thus,the python program has been executed successfully
